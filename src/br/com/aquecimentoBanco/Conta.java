@@ -1,4 +1,4 @@
-package testandobanco2;
+package br.com.aquecimentoBanco;
 public class Conta {
     
     private int numeroAgencia;

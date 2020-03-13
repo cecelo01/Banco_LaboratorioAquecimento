@@ -1,4 +1,4 @@
-package testandobanco2;
+package br.com.aquecimentoBanco;
 import java.util.Scanner;
 import java.util.Random;
 
