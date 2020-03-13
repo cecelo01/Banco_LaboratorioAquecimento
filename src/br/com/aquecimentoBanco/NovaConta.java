@@ -1,4 +1,4 @@
-package br.com.aquecimentoBanco;
+package testandobanco2;
 public class NovaConta {
     
 }

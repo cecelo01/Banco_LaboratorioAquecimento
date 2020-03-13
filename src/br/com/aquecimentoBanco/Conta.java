@@ -1,49 +1,62 @@
-package br.com.aquecimentoBanco;
-
+package testandobanco2;
 public class Conta {
     
-    private int conta;
+    private int numeroAgencia;
     private int numeroConta;
     protected float saldo;
+    
 
-    public void Conta(float saldo) {
+    public void Conta() {
         this.saldo = 0;
     }
     
-    public void Depositar(float saldo){
+    /*************************************************************************/
+    
+    public void depositar(float saldo){
         this.saldo += saldo;
     }
     
-    public boolean Sacar(float valor){
-        return false;
+    public boolean sacar(float valor){
+        if (valor > 0) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
     
-    public void PrintStatus(){
+    public String toString(){
+        return "\nAgência: "+numeroAgencia+"\nConta: "+numeroConta+"\nSaldo: "+saldo;
+    }
+    
+    public void printStatus(){
+    }
+    
+    /*************************************************************************/
+    
+    public void setNumeroAgencia(int numeroAgencia) {
+        this.numeroAgencia = numeroAgencia;
+    }
 
-    }
-    
-    
-    public void setConta(int conta) {
-        this.conta = conta;
-    }
-
-    public int getNumeroConta() {
-        return numeroConta;
+    public int getNumeroAgencia() {
+        return numeroAgencia;
     }
 
     public void setNumeroConta(int numeroConta) {
         this.numeroConta = numeroConta;
     }
-
-    public float getSaldo() {
-        return saldo;
+    
+    public int getNumeroConta() {
+        return numeroConta;
     }
 
     public void setSaldo(float saldo) {
         this.saldo = saldo;
     }
     
+    public float getSaldo() {
+        return saldo;
+    }
     
-    
-    
+    /*************************************************************************/  
 }
