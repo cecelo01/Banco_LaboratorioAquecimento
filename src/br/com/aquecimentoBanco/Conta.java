@@ -1,9 +1,6 @@
 package br.com.aquecimentoBanco;
 public class Conta {
      
-    // teste 2
-	
-	
 	
     private int numeroAgencia;
     private int numeroConta;
