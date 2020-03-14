@@ -1,7 +1,5 @@
 package br.com.aquecimentoBanco;
 public class Conta {
-	
-	/ /do/ente caraio//
      
     private int numeroAgencia;
     private int numeroConta;
